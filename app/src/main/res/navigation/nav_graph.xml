@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Fragment_Login">
+
+    <fragment
+        android:id="@+id/Fragment_Login"
+        android:name="com.example.afinal.AuthFragments.LoginFragment"
+        tools:layout="@layout/fragment_login"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_Fragment_Login_to_fragment_Registration"
+            app:destination="@id/fragment_Registration" />
+        <action
+            android:id="@+id/action_Fragment_Login_to_fragment_Recover"
+            app:destination="@id/fragment_Recover" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_Registration"
+        android:name="com.example.afinal.AuthFragments.RegistrationFragment"
+        tools:layout="@layout/fragment_registration"
+        android:label="Registration" >
+        <action
+            android:id="@+id/action_fragment_Registration_to_Fragment_Login"
+            app:destination="@id/Fragment_Login" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Recover"
+        android:name="com.example.afinal.AuthFragments.RecoverFragment"
+        tools:layout="@layout/fragment_recover"
+        android:label="Recover" >
+        <action
+            android:id="@+id/action_fragment_Recover_to_Fragment_Login"
+            app:destination="@id/Fragment_Login" />
+    </fragment>
+
+
+</navigation>

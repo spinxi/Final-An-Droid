@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_weight="4"
+            android:src="@drawable/ic_login"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_baseline_supervised_user_circle_24"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:text="Hello "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/nameSurname"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editPersonName"
+            android:inputType="text"
+            android:textColor="#fff"
+            android:textColorHint="#eee"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:hint="Change your name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/rounded_corner"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/editPersonPhoto"
+            android:inputType="text"
+            android:textColor="#fff"
+            android:textColorHint="#eee"
+            android:paddingStart="10dp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:hint="Change your avatar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/rounded_corner"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/editPersonPassword"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColorHint="#eee"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:hint="Change your password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/rounded_corner"
+            android:textSize="17sp" />
+        <Button
+            android:id="@+id/buttonSave"
+            android:paddingRight="20dp"
+            android:background="@drawable/rounded_corner_button"
+            android:paddingLeft="20dp"
+            android:backgroundTint="#f2ecec"
+            android:layout_marginBottom="10dp"
+            android:text="Save changes"
+            android:textColor="#777"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/buttonLogout"
+            android:paddingRight="20dp"
+            android:background="@drawable/rounded_corner_button"
+            android:paddingLeft="20dp"
+            android:backgroundTint="#f2ecec"
+            android:layout_marginBottom="10dp"
+            android:text="Log out from account"
+            android:textColor="#777"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"  />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
