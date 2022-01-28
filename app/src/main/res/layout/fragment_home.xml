@@ -28,6 +28,7 @@
         android:orientation="vertical"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
+        android:fontFamily="cursive"
         android:text="FOOD RECIPES"
         android:textAlignment="center"
         android:textColor="@color/white"
